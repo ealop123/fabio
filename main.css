@@ -1,0 +1,103 @@
+body {
+  background: lightblue;
+}
+
+#wrapper {
+  width: 80%;
+  min-width: 700px;
+  box-shadow: 2px 2px;
+  border: 0.5px solid black;
+  margin: auto;
+  margin-top: 100px;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#timestampStyle {
+  margin-top: 20px;
+}
+
+small {
+  color: darkred;
+  font-size: 75%;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+}
+
+
+/* BUTTON STYLING */
+button {
+  color: #454545;
+  background: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #454545;
+  position: relative;
+  margin: 1em;
+  display: inline-block;
+  padding: 0.5em 1em;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-weight: bold;
+}
+
+button:before, button:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-color: #454545;
+  box-sizing: border-box;
+  border-style: solid;
+  width: 1em;
+  height: 1em;
+  transition: all 0.3s ease-in-out
+}
+
+button:before {
+  top: -6px;
+  left: -6px;
+  border-width: 2px 0 0 2px;
+  z-index: 5;
+}
+
+button:after {
+  bottom: -6px;
+  right: -6px;
+  border-width: 0 2px 2px 0;
+}
+
+button:hover:before, button:hover:after {
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  border-color: #fff
+}
+
+button:hover {
+  color: #353535;
+  background-color: #fff;
+  border-color: #fff
+}
+/* BUTTON STYLING END */
+
+.userName {
+  color: darkblue;
+}
+
+.useTime {
+  color: green;
+}
+
+.pagesPrinted {
+  color: green;
+}
