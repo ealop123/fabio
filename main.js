@@ -31,11 +31,9 @@ function main() {
   replaceID('timestamp', _timestamp);
 }
 
-var refresh = function() {
-  //update information
-  console.log('refresh works!');
+var refresh = function(){
+  window.location = window.location.href+'?eraseCache=true';
 }
-
 
 window.onload = function() {
   $('refreshButton').onclick = refresh;
