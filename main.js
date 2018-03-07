@@ -32,7 +32,7 @@ function main() {
 }
 
 var refresh = function(){
-  window.location = window.location.href+'?eraseCache=true';
+  window.location.reload(true);
 }
 
 window.onload = function() {
