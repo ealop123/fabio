@@ -36,7 +36,7 @@ var refresh = function(){
 }
 
 window.onload = function() {
-  $('refreshButton').onclick = refresh;
+  //$('refreshButton').onclick = refresh;
   main();
   //testRun();
 }
